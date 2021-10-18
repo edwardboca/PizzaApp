@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Orders"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        android:textSize="50dp"
+
+            />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Client Number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Pizza"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        android:layout_marginTop="190dp"
+
+
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Nb Slices"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        android:layout_marginTop="350dp"
+
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Amount"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        android:layout_marginTop="450dp"
+
+
+
+
+        />
+
+    <EditText
+        android:id="@+id/edClientNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        android:text=""
+        android:textSize="10dp"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginLeft="10dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edNbSlices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/edClientNumber"
+
+        android:text="" />
+
+    <RadioGroup
+        android:id="@+id/rgPizzaType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/edClientNumber"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="190dp"
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/rbCheese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheese"
+            android:textSize="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbVegetarian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian"
+            android:textSize="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbMexican"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mexican"
+            android:textSize="10dp"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnShowAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show All"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:text="Quit"
+        app:layout_constraintStart_toStartOf="@+id/btnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="255dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
